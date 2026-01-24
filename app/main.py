@@ -53,3 +53,4 @@ app.include_router(attendance.router, prefix="/attendance", tags=["attendance"])
 @app.get("/", tags=["root"])
 def root():
     return {"message": "Welcome to Professional Event Management System API!"}
+#uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
